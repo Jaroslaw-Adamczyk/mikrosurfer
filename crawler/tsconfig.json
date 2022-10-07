@@ -5,6 +5,5 @@
     ],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
-},
-
+    },
 }
