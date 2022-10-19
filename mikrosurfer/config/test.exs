@@ -4,7 +4,7 @@ import Config
 # you can enable the server option below.
 config :mikrosurfer, MikrosurferWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "DXk2THZRUG8Hp/dRtGcgWQ7uxnJVqZGdTwrntvccBrEspJ3SzHEkv0RNsxjAvl9T",
+  secret_key_base: "62rgO0JBrSS2kZhd7gkFgU97IXQp+BRlGdErPdpeT6/QNc72LW0QYILxAP479mKb",
   server: false
 
 # In test we don't send emails.

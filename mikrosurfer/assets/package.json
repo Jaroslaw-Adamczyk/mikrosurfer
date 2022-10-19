@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/phoenix": "^1.5.4",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.25.0",
+    "prettier": "^2.7.1",
+    "source-map-loader": "^4.0.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "parcel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "deploy": "mkdir -p ../priv/static/ && cp -R static/* ../priv/static/ && parcel build js/*.js --out-dir ../priv/static/dist --public-url /dist --no-cache",
+    "watch": " cd .. mix watch"
+  }
+}

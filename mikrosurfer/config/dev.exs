@@ -9,14 +9,15 @@ import Config
 config :mikrosurfer, MikrosurferWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 4001],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "CubOXVRRPgE0FnGphaDGSmPy0o0Zi09k4YcTWUPil2vK/CxtTM749wE2eIrhLYmF",
+  secret_key_base: "2XBS6YOjbMx7p4u53YaW7npY9Sm3wjFDJt9eu2NQ+ZpOxR6fcivSnVZRUO5QSpXU",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    npm: ["run", "watch", cd: Path.expand("../assets", __DIR__)]
   ]
 
 # ## SSL Support

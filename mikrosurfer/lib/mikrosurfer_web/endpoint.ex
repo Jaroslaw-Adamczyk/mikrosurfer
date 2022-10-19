@@ -7,7 +7,7 @@ defmodule MikrosurferWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_mikrosurfer_key",
-    signing_salt: "wW+b1Kmo"
+    signing_salt: "otjW/f66"
   ]
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
